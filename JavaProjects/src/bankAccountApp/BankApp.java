@@ -41,9 +41,16 @@ public class BankApp {
 	  
 	 //getting the accounts values
 	  for(Account acc:accounts) {
-		  acc.showInfo();
 		  System.out.println("*********************");
+		  acc.showInfo();
+		  
 	  }
+	  
+	  
+	  //added 1000 thousand rupees to some customers
+
+	  accounts.get((int) Math.random()*accounts.size()).deposit(1000);
+	  accounts.get((int) Math.random()*accounts.size()).deposit(1000);
 	   
   }
 }
